@@ -5,7 +5,7 @@ module.exports = defineConfig({
   devServer: {
     proxy: {      // 代理
       "/api": {
-        target: process.env.VUE_APP_API,
+        target: "http://127.0.0.3:3000",
         changeOrigin: true,   // 允许跨域
         pathRewrite: {
           "/api": ""
